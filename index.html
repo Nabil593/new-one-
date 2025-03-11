@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+</head>
+<body>
+    <navbar>
+        <img src="banner2.png" width="100%">
+        <div class="opt">
+            <a href="#">Home</a>
+            <a href="#">Course Module - 2020</a>
+            <a href="#">Class Schedule</a>
+            <a href="#">Success Story</a>
+            <a href="#">Attendence</a>
+            <a href="#">FAQ</a>
+            <a href="#">Login</a>
+        </div>
+    </navbar>
+
+    <section>
+
+        <div class="sec1">
+
+             <h2>Student registration information</h2>
+            <hr>
+            <h3>Please enter relevent information</h3>
+            <h6>Mandetory Field*</h6>
+            <form class="form1">
+                <label for="dis">District(<small>Institute District: Where you want to do your course</small>)*</label><br>
+                <select id="opt" name="dis">
+                <option value="">--Select One--</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Rongpur">Rongpur</option>
+                </select><br>
+                <label for="course">Course*</label><br>
+                <select id="course" name="course">
+                    <option value="">--Select One--</option>
+                    <option value="Digital-marketing">Digital-marketing</option>
+                    <option value="Web development">Web development</option>
+                </select><br>
+                <label for="st-name">Student Name*</label><br>
+                <input type="text" id="st-name" name="st-name"><br>
+                <label for="fh-name">Father Name*</label><br>
+                <input type="text" id="fh-name" name="fh-name"><br>
+                <label for="mt-name">Mother Name*</label><br>
+                <input type="text" id="mt-name" name="mt-name"><br>
+                <form action="#" method="post" class="form-under">
+                    <fieldset>
+                        <legend>Date of Birth*</legend>
+                        <label for="day">Day:</label><br>
+                        <select id="day" name="day">
+                            <option value="">Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select><br>
+                        <label for="month">Month:</label><br>
+                        <select id="month" name="month">
+                            <option value="">Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select><br>
+                        <label for="year">Year:</label><br>
+                        <select id="year" name="year">
+                            <option value="">Select</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                        </select>
+                    </fieldset>
+                </form><br>
+                <label for="gender">Gender*</label>
+                <input type="radio" id="gender" name="gender">Male
+                <input type="radio" id="gender" name="gender">Female<br>
+                <label for="pd">Physically Handicapped*</label>
+                <input type="radio" id="pd" name="pd">Yes
+                <input type="radio" id="pd" name="pd">No<br>
+                <label for="email">Email*</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="eg">(e.g.example@mail.com)<br>Phone (Must be 11 Digits)*</label><br>
+                <input type="text" id="eg" name="eg"><br>
+                <label>(e.g:0155123456)</label>
+
+        </form>
+        </div>
+    
+    <div class="sec2">
+
+        <form class="form2">
+            <label for="identy">Identification Type*</label><br>
+            <select>
+                <option value="">Select One</option>
+                <option value="">Frelancer</option>
+                <option value="">Anthoprenuer</option>
+            </select><br>
+            <label for="p">Identification No. (Must be 10 digits for new NID. If your National ID is 13 digits, then pleace add your birdth year with the id as prefix.Example:1980XXXXXXXXXXXXX)*</label><br>
+            <input type="text" id="p" name="p"><br>
+            <label for="distik">Home District*</label><br>
+            <select>
+                <option value="">Select One</option>
+                <option value="">Dhaka</option>
+                <option value="">Rajshahi</option>
+            </select><br>
+            <label for="upazila">Upazila*</label><br>
+            <select>
+                <option value="">Select One</option>
+                <option value="">Dhaka</option>
+                <option value="">Rajshahi</option>
+            </select><br>
+            <label for="village">Village/House No./Road No./Other Alternative*</label><br>
+            <input type="text" id="village" name="village"><br>
+            <label for="post">Post Office*</label><br>
+            <input type="text" id="post" name="post"><br>
+            <label for="education">Educational Qualification* (Higher Level)</h6></label><br>
+            <select>
+                <option value="">Select One</option>
+                <option value="">SSC</option>
+                <option value="">HSC</option>
+            </select><br>
+            <label for="hc">Have any computer*</label>
+            <input type="radio" id="hc" name="hc">Yes
+            <input type="radio" id="hc" name="hc">No<br>
+            <label for="photo">Photograph*</label><br>
+            <input type="file">No file chosen<br>
+            (File type must be jpg or jpeg or png. Maxminum file size 2 mb.)<br>
+            <label for="photo">Signature*</label><br>
+            <input type="file">No file chosen<br>
+            (File type must be jpg or jpeg or png. Maxminum file size 2 mb.)<br>
+            <input type="submit">
+        </form>
+    </div>
+    
+     </section>
+</body>
+</html>
